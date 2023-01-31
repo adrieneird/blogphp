@@ -17,7 +17,7 @@
 <?php
     foreach($pages as $rowpage) {
 ?>
-<a href="index.php?page=<?= $rowpage->getUrl() ?>"><?= $rowpage->getTitre() ?></a>
+<a href="index.php?action=affiche_page&page=<?= $rowpage->getUrl() ?>"><?= $rowpage->getTitre() ?></a>
 <?php
     }
 ?>

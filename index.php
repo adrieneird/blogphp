@@ -1,20 +1,17 @@
 <?php
 
-require_once "classpage.php";
-
-if (isset($_GET['page'])) {
-    // requete pour récuperer le contenu à partir de l'URL
-    // Récupération du résultat
-    $page = Page::loadFromUrl(trim($_GET['page']));
-    if ($page) {
-?>
-<h1><?= $page->getTitre() ?></h1>
-<p><?= $page->getContenu() ?></p>
-<?php
-    } else {
-        echo "404 not found";
+if (isset($_GET['action'])) {
+    $action = $_GET['action'];
+    
+    if ($action === "affiche_formulaire") {
+        require "form.php";
+    }
+    if ($action === "affiche_page") {
+        require "affichepage.php";
     }
 } else {
-    echo "404 not found";
+    // Page par défaut
+    require "form.php";
 }
-?>
+
+
