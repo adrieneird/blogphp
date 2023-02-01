@@ -5,10 +5,10 @@
  * 
  */
 class Db {
-    private static $host = "db.3wa.io";
-    private static $user = "adrienboeglin";
-    private static $password = "59a6226e81d4068118e5f88f966dc992";
-    private static $database = "adrienboeglin_blog";
+    private static $host = "";
+    private static $user = "";
+    private static $password = "";
+    private static $database = "";
     private static $link = null;
     
     public static function getDb() {
