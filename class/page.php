@@ -91,4 +91,10 @@ class Page extends Objet {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_CLASS, "Page");
     }
+    
+    public static function deleteById($id) {
+        $query = "DELETE FROM page WHERE id=:id";
+        $stmt = Db::getDb()->prepare($query);
+        $stmt->execute(['id' => $id]);
+    }
 }

@@ -31,6 +31,9 @@ if (isset($_GET['action'])) {
         }*/
         require "controleur/adminpages.php";
     }
+    if ($action === "edit_page") {
+        require "controleur/editpage.php";
+    }
     if ($action === "login") {
         require "controleur/login.php";
     }

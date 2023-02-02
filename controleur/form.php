@@ -9,6 +9,6 @@
         $page->saveNew();
     }
 
-    $template = "vue/form_page.html";
+    $template = "vue/form_page.php";
     require "vue/layout.php";
 ?>
