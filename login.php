@@ -27,8 +27,9 @@ if (isset($_SESSION['id'])) {
     Bonjour <?= $nickname ?> !
 <?php 
     } else {
-    // On n'est pas connecté, on affiche le formulaire
-    include "vue/form_login.html";
+        // On n'est pas connecté, on affiche le formulaire
+        $template = "vue/form_login.html";
+        require "vue/layout.php";
     }
 ?>
     </body>

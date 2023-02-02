@@ -9,23 +9,7 @@
         $page->setContenu(sanitizeText("contenu"));
         $page->saveNew();
     }
-    
-    $pages = Page::loadPages();
-?>
 
-<nav>
-<?php
-    foreach($pages as $rowpage) {
+    $template = "vue/form_page.html";
+    require "vue/layout.php";
 ?>
-<a href="affiche_page/<?= $rowpage->getUrl() ?>"><?= $rowpage->getTitre() ?></a>
-<?php
-    }
-?>
-</nav>
-
-<form method="POST">
-    <input type="text" name="url" />
-    <input type="text" name="titre" />
-    <textarea name="contenu"></textarea>
-    <input type="submit" name="send" />
-</form>

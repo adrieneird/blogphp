@@ -7,22 +7,22 @@ if (isset($_GET['action'])) {
     
     if ($action === "affiche_formulaire") {
         if (!isset($_SESSION['id'])) {
-            header("Location: https://adrienboeglin.sites.3wa.io/php1/blog/login");
+            header("Location: https://adrienboeglin.sites.3wa.io/php1/blog/index.php?action=login");
             die();
         }
-        require "form.php";
+        require "controleur/form.php";
     }
     if ($action === "affiche_page") {
-        require "affichepage.php";
+        require "controleur/affichepage.php";
     }
     if ($action === "login") {
-        require "login.php";
+        require "controleur/login.php";
     }
     if ($action === "subscribe") {
-        require "subscribe.php";
+        require "controleur/subscribe.php";
     }
 } else {
     // Page par défaut
-    header("Location: https://adrienboeglin.sites.3wa.io/php1/blog/affiche_formulaire");
+    header("Location: https://adrienboeglin.sites.3wa.io/php1/blog/index.php?action=affiche_formulaire");
     die();
 }

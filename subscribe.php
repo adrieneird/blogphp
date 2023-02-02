@@ -28,7 +28,8 @@ if (isset($_SESSION['id'])) {
 <?php 
     } else {
     // On n'est pas connecté, on affiche le formulaire
-    include "vue/form_subscribe.html";
+    $template = "vue/form_subscribe.html";
+    require "vue/layout.php";
  } ?>
     </body>
 </html>
