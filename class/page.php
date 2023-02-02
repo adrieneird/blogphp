@@ -1,7 +1,5 @@
 <?php
 
-require_once "classdb.php";
-
 abstract class Objet {
     abstract function saveNew();
     abstract function saveUpdate();

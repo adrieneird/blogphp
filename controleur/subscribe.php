@@ -1,8 +1,5 @@
 <?php
 
-require_once "form_subscribe.php";
-require_once "user.php";
-
 // Traitement des données formulaires
 if (isset($_POST['subscribe'])) {
     $form_subscribe = new FormSubscribe();

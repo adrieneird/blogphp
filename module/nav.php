@@ -1,6 +1,4 @@
 <?php
-    require_once "classpage.php";
-    
     $pages = Page::loadPages();
 ?>
 <nav>

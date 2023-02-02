@@ -1,6 +1,5 @@
 <?php
     require_once "functions.php";
-    require_once "classpage.php";
 
     if (isset($_POST['send'])) {
         $page = new Page();

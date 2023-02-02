@@ -1,8 +1,5 @@
 <?php
 
-require_once "user.php";
-require_once "classdb.php";
-
 class FormSubscribe {
     public $pseudo;
     public $mail;

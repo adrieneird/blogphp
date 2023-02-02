@@ -1,8 +1,5 @@
 <?php
 
-require_once "user.php";
-require_once "form_login.php";
-
 // Traitement des données formulaires
 if (isset($_POST['login'])) {
     $form_login = new FormLogin();

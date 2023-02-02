@@ -1,7 +1,5 @@
 <?php
 
-require_once "user.php";
-
 class FormLogin {
     public $mail;
     public $password;

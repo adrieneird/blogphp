@@ -1,7 +1,5 @@
 <?php
 
-require_once "classdb.php";
-
 class User {
     public $id;
     public $nickname;
